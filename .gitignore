@@ -1,0 +1,6 @@
+node_modules/
+shots/
+server.log
+*.log
+qr-live.png
+.mimosa/

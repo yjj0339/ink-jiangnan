@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+<meta name="description" content="纸上江南 · 水墨营造录 —— 在宣纸山水之间，营造一座欣欣向荣的江南小镇">
+<title>纸上江南 · 水墨营造录</title>
+<link rel="stylesheet" href="css/style.css">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%23a8402e'/%3E%3Ctext x='16' y='23' font-size='18' text-anchor='middle' fill='%23f6f1e3' font-family='serif'%3E%E6%B1%9F%3C/text%3E%3C/svg%3E">
+</head>
+<body>
+
+<!-- 标题画面 -->
+<div id="title-screen" class="hidden">
+  <div class="title-inner">
+    <div class="title-row">
+      <h1 class="game-title">纸上江南</h1>
+      <div class="seal">营造<br>录</div>
+    </div>
+    <p class="subtitle">水墨营造 · 模拟经营 —— 于宣纸山水之间，造一座人间烟火的小镇</p>
+    <div class="preview-wrap">
+      <canvas id="map-preview" width="260" height="260"></canvas>
+      <div class="preview-cap">这片山水，可还入画？</div>
+    </div>
+    <div class="title-btns">
+      <button id="btn-new" class="primary">开 始 营 造</button>
+      <button id="btn-reroll">换一片山水</button>
+      <button id="btn-continue" class="hidden">继续上次</button>
+    </div>
+    <p class="title-hint">拖动平移 · 滚轮/双指缩放 · 手机可玩</p>
+  </div>
+</div>
+
+<!-- 游戏主界面 -->
+<div id="app" class="hidden">
+  <canvas id="game"></canvas>
+
+  <header id="topbar">
+    <div class="brand">纸上江南</div>
+    <div id="date-chip"></div>
+    <div id="res-chips"></div>
+    <div class="topbar-actions">
+      <div id="speed-ctrl">
+        <button data-s="0" title="暂停（空格）">⏸</button>
+        <button data-s="1" class="on" title="常速（1）">▶</button>
+        <button data-s="2" title="二倍速（2）">▶▶</button>
+        <button data-s="4" title="四倍速（3）">▶▶▶</button>
+      </div>
+      <button id="btn-tech" title="科技">科</button>
+      <button id="btn-quest" title="任务与成就">务</button>
+      <button id="btn-stats" title="镇志统计">志</button>
+      <button id="btn-save" title="存档">档</button>
+      <button id="btn-sound" title="音效">音</button>
+      <button id="btn-help" title="指南">?</button>
+    </div>
+  </header>
+
+  <div id="quest-card" title="查看任务"></div>
+
+  <aside id="inspector" class="hidden"></aside>
+
+  <nav id="palette">
+    <div id="palette-tabs"></div>
+    <div id="palette-cards"></div>
+  </nav>
+
+  <div id="zoom-ctrl">
+    <button id="zoom-in">＋</button>
+    <button id="zoom-out">－</button>
+    <button id="zoom-fit" title="总览">⌂</button>
+  </div>
+
+  <div id="toasts"></div>
+  <div id="modal-root" class="hidden"><div id="modal-card"></div></div>
+</div>
+
+<script type="module" src="js/main.js"></script>
+</body>
+</html>
