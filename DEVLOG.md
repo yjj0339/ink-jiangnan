@@ -29,7 +29,7 @@
 - [x] UI（9 类建造面板/检视/科技/任务/成就/镇志图表/存档/帮助）
 - [x] 存档（3 槽位+自动+导出导入）、WebAudio 合成音效
 - [x] Playwright 冒烟测试（复用系统 Edge headless，`?test=1&seed=` 固定种子，`__place/__sim/__state` 钩子），桌面+390px 移动端截图目检
-- [ ] 部署+收尾硬清单
+- [x] 部署+收尾硬清单：线上 200 + JS MIME application/javascript ✓ · README 顶部线上址 ✓ · qr-live.png ✓ · 导航主页最新作品卡片 ✓ · 线上冒烟零报错 ✓ · 记忆已写 ✓ · 手机 390px 截图目检 ✓
 
 ## 调平衡踩坑记录（tools/sim.js 无头模拟抓出来的）
 
